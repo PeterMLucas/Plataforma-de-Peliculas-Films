@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/be92845f49.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <title>Films</title>
+    <link rel="shortcut icon" href="images/icon2.png">
+</head>
+<body>
+    <div class="container-fluid">
+        <!-- ****************HEADER******************** -->
+        <header>
+            <!-- -----------NAV------------- -->
+            <div class="container-navbar">
+                <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                    <div class="container-fluid nav">
+                        <a class="navbarSupportedContent" href="#inicio"><img src="images/logo3.png" alt="FILMS" width="150"></a>
+                        <button class="navbar-toggler" type="button" data-bs-target="#navbarSupportedContent"
+                            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent inicio">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#inicio"><i class="fa-sharp fa-solid fa-house"
+                                            style="color: #FFFFFF; padding-right: 5px;"></i>Inicio</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#"><i class="fa-solid fa-magnifying-glass"
+                                            style="color: #FFFFFF; padding-right: 5px;"></i>Buscar</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#peliculas"><i class="fa-sharp fa-solid fa-video"
+                                            style="color: #FFFFFF; padding-right: 5px;"></i>Películas</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#series"><i class="fa-solid fa-clapperboard"
+                                            style="color: #FFFFFF; padding-right: 5px;"></i>Series</a>
+                                </li>
+                            </ul>
+                            <div>
+                                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                            <i class="fa-solid fa-user" style="color: #FFFFFF; padding-right: 5px;"></i>Perfil
+                                        </a>
+                                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                            <li><a class="dropdown-item" href="#">Iniciar sesión</a></li>
+                                            <li><a class="dropdown-item" href="#">Registrarse</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="offcanvas-1">
+                            <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                                aria-controls="offcanvasRight"><i class="fa-solid fa-bars fax2 fa-xl"
+                                    style="color: #005ef5b5;"></i></button>
+            
+                            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
+                                aria-labelledby="offcanvasRightLabel">
+                                <div class="offcanvas-header">
+                                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                                        aria-label="Close">
+                                        <i class="fa-solid fa-x fax2 fa-xl" style="color: #005ef5b5;"></i>
+                                    </button>
+                                </div>
+                                <div class="offcanvas-body">
+                                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                        <li class="nav-item">
+                                            <a class="nav-link active" aria-current="page" href="#"><i
+                                                    class="fa-sharp fa-solid fa-house"
+                                                    style="color: #FFFFFF; padding-right: 5px;"></i>Inicio</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link active" aria-current="page" href="#"><i
+                                                    class="fa-solid fa-magnifying-glass"
+                                                    style="color: #FFFFFF; padding-right: 5px;"></i>Buscar</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link active" aria-current="page" href="#"><i
+                                                    class="fa-sharp fa-solid fa-video"
+                                                    style="color: #FFFFFF; padding-right: 5px;"></i>Películas</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link active" aria-current="page" href="#"><i
+                                                    class="fa-solid fa-clapperboard"
+                                                    style="color: #FFFFFF; padding-right: 5px;"></i>Series</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link active" aria-current="page" href="#">
+                                                <i class="fa-solid fa-user-check"
+                                                    style="color: #FFFFFF; padding-right: 5px;"></i>Iniciar sesión</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link active" aria-current="page" href="#"><i class="fa-solid fa-user"
+                                                    style="color: #FFFFFF; padding-right: 5px;"></i>Registrarse</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <!-- -----------END-NAV------------- -->
+            
+            <!-- -----------CAROUSEL------------- -->
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                <div class="titulo-h1">
+                    <div>
+                        <div class="titulo-h1-texto">
+                            <h1>LAS MEJORES SERIES </h1>
+                            <h1>Y PELICULAS</h1>
+                            <h1>LAS ENCONTRAS EN</h1>
+                        </div>
+                        <div class="titulo-img"><img src="images/logo3.png" alt="FILMS" width="300"></div>
+                    </div>
+                    <div class="d-grid gap-2 btn-principales">
+                        <button class="btn btn-lg" type="button">INICIAR SESIÓN</button>
+                        <button class="btn btn-lg" type="button">REGISTRARSE</button>
+                    </div>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="images/carousel1.jpg" class="d-block w-100" alt="Top Gun">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/carousel2.jpg" class="d-block w-100" alt="Star Tek">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/carousel3.jpg" class="d-block w-100" alt="Star Wars">
+                    </div>
+                </div>
+            </div>
+            <!-- -----------END CAROUSEL------------- -->
+        </header>
+        <!-- ****************************************** -->
+
+        <!-- ********************MAIN****************** -->
+        <main>
+            <!--------------- SWIPER SLIDE ------------------->
+            <div class="swiper-container">
+                <div class="swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <div class="swiper-slide-item-1">
+                                <p>Mirá Batman</p>
+                                <p>Película</p>
+                                <a href="" target="_blank">Ver Ahora</a>
+                            </div>
+                            <div class="swiper-slide-item-2">
+                                <p>Mirá Los Minions</p>
+                                <p>Película</p>
+                                <a href="" target="_blank">Ver Ahora</a>
+                            </div>
+                            <div class="swiper-slide-item-3">
+                                <p>Mirá Daria</p>
+                                <p>Serie</p>
+                                <a href="" target="_blank">Ver Ahora</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper-slide-item-1">
+                                <p>Mirá Scream</p>
+                                <p>Película</p>
+                                <a href="" target="_blank">Ver Ahora</a>
+                            </div>
+                            <div class="swiper-slide-item-2">
+                                <p>Mirá El Proyecto Adam</p>
+                                <p>Película</p>
+                                <a href="" target="_blank">Ver Ahora</a>
+                            </div>
+                            <div class="swiper-slide-item-3">
+                                <p>Mirá Spiderman</p>
+                                <p>Película</p>
+                                <a href="" target="_blank">Ver Ahora</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper-slide-item-1">
+                                <p>Mirá Acapulco Shore</p>
+                                <p>Serie</p>
+                                <a href="" target="_blank">Ver Ahora</a>
+                            </div>
+                            <div class="swiper-slide-item-2">
+                                <p>Mirá South Park</p>
+                                <p>Serie</p>
+                                <a href="" target="_blank">Ver Ahora</a>
+                            </div>
+                            <div class="swiper-slide-item-3">
+                                <p>Mirá El Gerente</p>
+                                <p>Película</p>
+                                <a href="" target="_blank">Ver Ahora</a>
+                            </div>
+                        </div>
+                        <!-- ... -->
+                    </div>
+                    <!-- If we need pagination
+                    <div class="swiper-pagination"></div> -->
+        
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+        
+                    <!-- If we need scrollbar -->
+                    <!-- <div class="swiper-scrollbar"></div> -->
+                </div>
+            </div>
+            <!-- -----------END SWIPER SLIDEL------------- -->
+        
+            <!-- -----------ITEMS PELICULAS------------- -->
+            <div class="items-series-fila-1">
+                <div class="items-series-titulo" id="peliculas">
+                    <h2 style="color: #FFFFFF;">PELICULAS</h2>
+                </div>
+                <div class="container-flex">
+                    <div class="items-responsive">
+                        <div class="items-img-1">
+
+                            <div class="items-img">
+                                <div class="img-hover">
+                                    <img src="images/batman.jfif" width="450" class="img-fluid" alt="Batman">
+                                    <div class="items-texto">
+                                        <h2>Batman</h2>
+                                        <p>
+                                            Acción/Aventura
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="items-img">
+                                <div class="img-hover">
+                                    <img src="images/el-gerente.jpg" alt="El Gerente" width="450" class="img-fluid">
+                                    <div class="items-texto">
+                                        <h2>El Gerente</h2>
+                                        <p>
+                                            Comedia/Basado en hechos reales
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="items-img-2">
+                            <div class="items-img">
+                                <div class="img-hover">
+                                    <img src="images/jurassic.jfif" alt="Jurassic World" width="450" class="img-fluid">
+                                    <div class="items-texto">
+                                        <h2>Jurassic World</h2>
+                                        <p>Ciencia ficción</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="items-img">
+                                <div class="img-hover">
+                                    <img src="images/minions.jpg" alt="Minions" width="450" class="img-fluid">
+                                    <div class="items-texto">
+                                        <h2>Minions</h2>
+                                        <p>Comedia/Aventura</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="items-responsive">
+                        <div class="items-img-3">
+                            <div class="items-img">
+                                <div class="img-hover">
+                                    <img src="images/scream.jfif" alt="Scream" width="450" class="img-fluid">
+                                    <div class="items-texto">
+                                        <h2>Scream</h2>
+                                        <p>Terror</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="items-img">
+                                <div class="img-hover">
+                                    <img src="images/spiderman.jfif" alt="Spiderman" width="450" class="img-fluid">
+                                    <div class="items-texto">
+                                        <h2>Spiderman</h2>
+                                        <p>Acción/Aventura</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="items-img-4">
+                            <div class="items-img">
+                                <div class="img-hover">
+                                    <img src="images/beavis.jpg" alt="Beavis y Butt" width="450" class="img-fluid">
+                                    <div class="items-texto">
+                                        <h2>Beavis y Butt</h2>
+                                        <p>Comedia/Aventura animada</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="items-img">
+                                <div class="img-hover">
+                                    <img src="images/elproyectoadam.jfif" alt="El Proyecto Adam" width="450" class="img-fluid">
+                                    <div class="items-texto">
+                                        <h2>El Proyecto Adam</h2>
+                                        <p>Ciencia ficción/Drama</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- --------------- -->
+            <div class="items-series-fila-1">
+                <div class="container-flex">
+                    <div class="items-responsive">
+                        <div class="items-img-1">
+            
+                            <div class="items-img">
+                                <div class="img-hover">
+                                    <img src="images/la-luz-del-diablo.jfif" width="450" class="img-fluid" alt="La luz del diablo">
+                                    <div class="items-texto">
+                                        <h2>La luz del diablo</h2>
+                                        <p>
+                                            Terror
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+            
+                            <div class="items-img">
+                                <div class="img-hover">
+                                    <img src="images/la-huerfana.jfif" alt="La huérfana" width="450" class="img-fluid">
+                                    <div class="items-texto">
+                                        <h2>La Huérfana</h2>
+                                        <p>
+                                            Terror/Suspenso
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="items-img-2">
+                            <div class="items-img">
+                                <div class="img-hover">
+                                    <img src="images/la-chica-salvaje.jfif" alt="La chica salvaje" width="450" class="img-fluid">
+                                    <div class="items-texto">
+                                        <h2>La chica salvaje</h2>
+                                        <p>Misterio/Suspenso</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="items-img">
+                                <div class="img-hover">
+                                    <img src="images/el-angel-de-la-muerte.jfif" alt="El ángel de la muerte" width="450" class="img-fluid">
+                                    <div class="items-texto">
+                                        <h2>El ángel de la muerte</h2>
+                                        <p>Crimen/Drama</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <div class="items-responsive">
+                        <div class="items-img-3">
+                            <div class="items-img">
+                                <div class="img-hover">
+                                    <img src="images/emancipation.jfif" alt="Emancipación" width="450" class="img-fluid">
+                                    <div class="items-texto">
+                                        <h2>Emancipación</h2>
+                                        <p>Drama/Acción</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="items-img">
+                                <div class="img-hover">
+                                    <img src="images/top-gun.jfif" alt="Top Gun" width="450" class="img-fluid">
+                                    <div class="items-texto">
+                                        <h2>Top Gun</h2>
+                                        <p>Acción/Aventura</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="items-img-4">
+                            <div class="items-img">
+                                <div class="img-hover">
+                                    <img src="images/pinocchio.jfif" alt="Beavis y Butt" width="450" class="img-fluid">
+                                    <div class="items-texto">
+                                        <h2>Pinocchio</h2>
+                                        <p>Fantasía/Musical</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="items-img">
+                                <div class="img-hover">
+                                    <img src="images/la-casa-gucci.jfif" alt="La casa Gucci" width="450" class="img-fluid">
+                                    <div class="items-texto">
+                                        <h2>La casa Gucci</h2>
+                                        <p>Drama/Crimen</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- -----------END ITEMS PELICULAS------------- -->
+        
+            <!-- -----------ITEMS SERIES------------- -->
+            <div class="items-series-fila-2">
+                <div class="items-series-titulo" id="series">
+                    <h2 style="color: #FFFFFF;">SERIES</h2>
+                </div>
+                <div class="container-flex">
+                    <div class="items-responsive">
+                        <div class="items-img-1">
+                            <div class="items-img">
+                                <div class="img-hover">
+                                    <img src="images/daria.jpg" alt="" width="450" class="img-fluid">
+                                    <div class="items-texto">
+                                        <h2>Daria</h2>
+                                        <p>Dibujo animado/Comedia</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="items-img">
+                                <div class="img-hover">
+                                    <img src="images/the-hand.jpg" alt="" width="450" class="img-fluid">
+                                    <div class="items-texto">
+                                        <h2>The Handmaid's Tale</h2>
+                                        <p>Ciencia ficción</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="items-img-2">
+                            <div class="items-img">
+                                <div class="img-hover">
+                                    <img src="images/bob-esponja.jpg" alt="" width="450" class="img-fluid">
+                                    <div class="items-texto">
+                                        <h2>Bob Esponja</h2>
+                                        <p>Infantil</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="items-img">
+                                <div class="img-hover">
+                                    <img src="images/acapulco-shore.jpg" alt="" width="450" class="img-fluid">
+                                    <div class="items-texto">
+                                        <h2>Acapulco Shore</h2>
+                                        <p>Reality</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="items-responsive">
+                        <div class="items-img-3">
+                            <div class="items-img">
+                                <div class="img-hover">
+                                    <img src="images/paw.jpg" alt="" width="450" class="img-fluid">
+                                    <div class="items-texto">
+                                        <h2>PAW Patrol</h2>
+                                        <p>Aventura</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="items-img">
+                                <div class="img-hover">
+                                    <img src="images/southpark.jpg" alt="" width="450" class="img-fluid">
+                                    <div class="items-texto">
+                                        <h2>South Park</h2>
+                                        <p>Animación</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="items-img-4">
+                            <div class="items-img">
+                                <div class="img-hover">
+                                    <img src="images/1899.jfif" alt="" width="450" class="img-fluid">
+                                    <div class="items-texto">
+                                        <h2>1899</h2>
+                                        <p>Misterio</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="items-img">
+                                <div class="img-hover">
+                                    <img src="images/yellow.jpg" alt="" width="450" class="img-fluid">
+                                    <div class="items-texto">
+                                        <h2>Yellowstone</h2>
+                                        <p>Drama</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- --------------- -->
+            <div class="items-series-fila-2">
+                <div class="container-flex">
+                    <div class="items-responsive">
+                        <div class="items-img-1">
+            
+                            <div class="items-img">
+                                <div class="img-hover">
+                                    <img src="images/dahmer.jpg" width="450" class="img-fluid" alt="Dahmer">
+                                    <div class="items-texto">
+                                        <h2>Dahmer</h2>
+                                        <p>
+                                            Suspenso
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+            
+                            <div class="items-img">
+                                <div class="img-hover">
+                                    <img src="images/el-fin-del-amor.jfif" alt="El fin del amor" width="450" class="img-fluid">
+                                    <div class="items-texto">
+                                        <h2>El fin del amor</h2>
+                                        <p>
+                                            Drama
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="items-img-2">
+                            <div class="items-img">
+                                <div class="img-hover">
+                                    <img src="images/estamos-muertos.jfif" alt="Estamos muertos" width="450" class="img-fluid">
+                                    <div class="items-texto">
+                                        <h2>Estamos muertos</h2>
+                                        <p>Drama</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="items-img">
+                                <div class="img-hover">
+                                    <img src="images/star-wars.jfif" alt="Star Wars" width="450"
+                                        class="img-fluid">
+                                    <div class="items-texto">
+                                        <h2>Star Wars</h2>
+                                        <p>Acción</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <div class="items-responsive">
+                        <div class="items-img-3">
+                            <div class="items-img">
+                                <div class="img-hover">
+                                    <img src="images/alquimia-de-almas.jfif" alt="Alquimia de almas" width="450" class="img-fluid">
+                                    <div class="items-texto">
+                                        <h2>Alquimia de almas</h2>
+                                        <p>Romance</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="items-img">
+                                <div class="img-hover">
+                                    <img src="images/the-boys.jpg" alt="The Boys" width="450" class="img-fluid">
+                                    <div class="items-texto">
+                                        <h2>The Boys</h2>
+                                        <p>Acción</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="items-img-4">
+                            <div class="items-img">
+                                <div class="img-hover">
+                                    <img src="images/the-good-doctor.jfif" alt="The Good Doctor" width="450" class="img-fluid">
+                                    <div class="items-texto">
+                                        <h2>The Good Doctor</h2>
+                                        <p>Drama</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="items-img">
+                                <div class="img-hover">
+                                    <img src="images/elite.jfif" alt="Élite" width="450" class="img-fluid">
+                                    <div class="items-texto">
+                                        <h2>Élite</h2>
+                                        <p>Drama</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- -----------END ITEMS SERIES------------- -->
+        
+            <!-- ------------------BANNER---------------- -->
+            <div class="banner">
+                <div class="banner-img">
+                    <img src="images/lahuerfana-banner.png" alt="" class="img-fluid">
+                </div>
+            </div>
+            <!-- ---------------------------------------- -->
+        </main>
+        <!-- ****************************************** -->
+    
+        <!-- *******************FOOTER***************** -->
+        <footer>
+            <!-- ------------------REDES---------------- -->
+            <div class="redes">
+                <div class="container-redes">
+                    <div>
+                        Buscanos en nuestras redes
+                    </div>
+                    <div class="redes-items">
+                        <div class="redes-items-caja">
+                            <i class="fa-brands fa-instagram" style="font-size: 28px;"></i>
+                            <span>Instagram</span>
+                        </div>
+                        <div class="redes-items-caja">
+                            <i class="fa-brands fa-twitter" style="font-size: 28px;"></i>
+                            <span>Twitter</span>
+                        </div>
+                        <div class="redes-items-caja">
+                            <i class="fa-brands fa-facebook" style="font-size: 28px;"></i>
+                            <span>Facebook</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ---------------------------------------- -->
+        
+            <!-- ------------------FOOTER---------------- -->
+            <div class="footer">
+                <div class="container-footer">
+                    <div class="footer-logo">
+                        <img src="images/logo3.png" alt="Logo Films">
+                    </div>
+                    <div class="footer-items">
+                        <div>
+                            <a href="" target="_blank">Política de Privacidad</a>
+                        </div>
+                        <div>
+                            <a href="" target="_blank">Acuerdo de suscripción</a>
+                        </div>
+                        <div>
+                            <a href="" target="_blank">Cancelar suscripción</a>
+                        </div>
+                        <div>
+                            <a href="" target="_blank">Dispositivos compatibles</a>
+                        </div>
+                        <div>
+                            <a href="" target="_blank">Acerca de Films</a>
+                        </div>
+                    </div>
+                    <div class="footer-texto">
+                        <div class="texto-span">
+                            <span>
+                                Fils es un servicio de peliculas con suscripción, su contenido está sujeto a disponibilidad. El
+                                servicio de Films es
+                                comercializado por una Sociedad Anónima (Argentina) Ciudad Autónoma de Buenos
+                                Aires. La suscripción incluye todas las peliculas y series disponibles en la plataforma. Ante
+                                cualquier duda comunicarse a cualquiera de las redes sociales incluidas en dicha plataforma.
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ---------------------------------------- -->
+        </footer>
+        <!-- ****************************************** -->
+
+    </div>
+
+    <!-- <script>
+        $(document).ready(() => {
+            $('#mostrarPeli').mouseover(function () {
+                $('#peli').show();
+            });
+        });
+    </script> -->
+
+    <script>
+        const swiper = new Swiper('.swiper', {
+                // Optional parameters
+                direction: 'horizontal',
+                loop: true,
+
+                // If we need pagination
+                pagination: {
+                    el: '.swiper-pagination',
+                },
+
+                // Navigation arrows
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+
+                // And if we need scrollbar
+                scrollbar: {
+                    el: '.swiper-scrollbar',
+                },
+            });
+    </script>
+
+</body>
+</html>
