@@ -14,8 +14,8 @@
     <script src="https://kit.fontawesome.com/be92845f49.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-    <title>Films</title>
-    <link rel="shortcut icon" href="images/icon2.png">
+    <title>Movie App</title>
+    <link rel="shortcut icon" href="images/icon-2.png">
 </head>
 <body>
     <div class="container-fluid">
@@ -23,9 +23,9 @@
         <header>
             <!-- -----------NAV------------- -->
             <div class="container-navbar">
-                <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <nav class="navbar navbar-expand-lg navbar-dark">
                     <div class="container-fluid nav">
-                        <a class="navbarSupportedContent" href="#inicio"><img src="images/logo3.png" alt="FILMS" width="150"></a>
+                        <a class="navbarSupportedContent" href="#inicio"><img src="images/logo2.png" alt="FILMS" width="150"></a>
                         <button class="navbar-toggler" type="button" data-bs-target="#navbarSupportedContent"
                             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
@@ -33,19 +33,19 @@
                         <div class="collapse navbar-collapse" id="navbarSupportedContent inicio">
                             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                                 <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="#inicio"><i class="fa-sharp fa-solid fa-house"
+                                    <a class="nav-link active" id="underline" aria-current="page" href="#inicio"><i class="fa-sharp fa-solid fa-house"
                                             style="color: #FFFFFF; padding-right: 5px;"></i>Inicio</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="#"><i class="fa-solid fa-magnifying-glass"
+                                    <a class="nav-link active" id="underline" aria-current="page" href="#"><i class="fa-solid fa-magnifying-glass"
                                             style="color: #FFFFFF; padding-right: 5px;"></i>Buscar</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="#peliculas"><i class="fa-sharp fa-solid fa-video"
+                                    <a class="nav-link active" id="underline" aria-current="page" href="#peliculas"><i class="fa-sharp fa-solid fa-video"
                                             style="color: #FFFFFF; padding-right: 5px;"></i>Películas</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="#series"><i class="fa-solid fa-clapperboard"
+                                    <a class="nav-link active" id="underline" aria-current="page" href="#series"><i class="fa-solid fa-clapperboard"
                                             style="color: #FFFFFF; padding-right: 5px;"></i>Series</a>
                                 </li>
                             </ul>
@@ -126,7 +126,7 @@
                             <h1>Y PELICULAS</h1>
                             <h1>LAS ENCONTRAS EN</h1>
                         </div>
-                        <div class="titulo-img"><img src="images/logo3.png" alt="FILMS" width="300"></div>
+                        <div class="titulo-img"><img src="images/logo2.png" alt="FILMS" width="300"></div>
                     </div>
                     <div class="d-grid gap-2 btn-principales">
                         <button class="btn btn-lg" type="button">INICIAR SESIÓN</button>
@@ -135,13 +135,13 @@
                 </div>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="images/carousel1.jpg" class="d-block w-100" alt="Top Gun">
+                        <img src="images/carousel1.jpg" class="w-100 h-100 d-inline-block" alt="Top Gun">
                     </div>
                     <div class="carousel-item">
-                        <img src="images/carousel2.jpg" class="d-block w-100" alt="Star Tek">
+                        <img src="images/carousel2.jpg" class="w-100 h-100 d-inline-block" alt="Star Tek">
                     </div>
                     <div class="carousel-item">
-                        <img src="images/carousel3.jpg" class="d-block w-100" alt="Star Wars">
+                        <img src="images/carousel3.jpg" class="w-100 h-100 d-inline-block" alt="Star Wars">
                     </div>
                 </div>
             </div>
@@ -151,77 +151,6 @@
 
         <!-- ********************MAIN****************** -->
         <main>
-            <!--------------- SWIPER SLIDE ------------------->
-            <div class="swiper-container">
-                <div class="swiper">
-                    <!-- Additional required wrapper -->
-                    <div class="swiper-wrapper">
-                        <!-- Slides -->
-                        <div class="swiper-slide">
-                            <div class="swiper-slide-item-1">
-                                <p>Mirá Batman</p>
-                                <p>Película</p>
-                                <a href="" target="_blank">Ver Ahora</a>
-                            </div>
-                            <div class="swiper-slide-item-2">
-                                <p>Mirá Los Minions</p>
-                                <p>Película</p>
-                                <a href="" target="_blank">Ver Ahora</a>
-                            </div>
-                            <div class="swiper-slide-item-3">
-                                <p>Mirá Daria</p>
-                                <p>Serie</p>
-                                <a href="" target="_blank">Ver Ahora</a>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="swiper-slide-item-1">
-                                <p>Mirá Scream</p>
-                                <p>Película</p>
-                                <a href="" target="_blank">Ver Ahora</a>
-                            </div>
-                            <div class="swiper-slide-item-2">
-                                <p>Mirá El Proyecto Adam</p>
-                                <p>Película</p>
-                                <a href="" target="_blank">Ver Ahora</a>
-                            </div>
-                            <div class="swiper-slide-item-3">
-                                <p>Mirá Spiderman</p>
-                                <p>Película</p>
-                                <a href="" target="_blank">Ver Ahora</a>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="swiper-slide-item-1">
-                                <p>Mirá Acapulco Shore</p>
-                                <p>Serie</p>
-                                <a href="" target="_blank">Ver Ahora</a>
-                            </div>
-                            <div class="swiper-slide-item-2">
-                                <p>Mirá South Park</p>
-                                <p>Serie</p>
-                                <a href="" target="_blank">Ver Ahora</a>
-                            </div>
-                            <div class="swiper-slide-item-3">
-                                <p>Mirá El Gerente</p>
-                                <p>Película</p>
-                                <a href="" target="_blank">Ver Ahora</a>
-                            </div>
-                        </div>
-                        <!-- ... -->
-                    </div>
-                    <!-- If we need pagination
-                    <div class="swiper-pagination"></div> -->
-        
-                    <!-- If we need navigation buttons -->
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-button-next"></div>
-        
-                    <!-- If we need scrollbar -->
-                    <!-- <div class="swiper-scrollbar"></div> -->
-                </div>
-            </div>
-            <!-- -----------END SWIPER SLIDEL------------- -->
         
             <!-- -----------ITEMS PELICULAS------------- -->
             <div class="items-series-fila-1">
@@ -612,13 +541,6 @@
             </div>
             <!-- -----------END ITEMS SERIES------------- -->
         
-            <!-- ------------------BANNER---------------- -->
-            <div class="banner">
-                <div class="banner-img">
-                    <img src="images/lahuerfana-banner.png" alt="" class="img-fluid">
-                </div>
-            </div>
-            <!-- ---------------------------------------- -->
         </main>
         <!-- ****************************************** -->
     
@@ -652,7 +574,7 @@
             <div class="footer">
                 <div class="container-footer">
                     <div class="footer-logo">
-                        <img src="images/logo3.png" alt="Logo Films">
+                        <img src="images/logo2.png" alt="Logo Films">
                     </div>
                     <div class="footer-items">
                         <div>
@@ -668,14 +590,14 @@
                             <a href="" target="_blank">Dispositivos compatibles</a>
                         </div>
                         <div>
-                            <a href="" target="_blank">Acerca de Films</a>
+                            <a href="" target="_blank">Acerca de Movie App</a>
                         </div>
                     </div>
                     <div class="footer-texto">
                         <div class="texto-span">
                             <span>
-                                Fils es un servicio de peliculas con suscripción, su contenido está sujeto a disponibilidad. El
-                                servicio de Films es
+                                Movie App es un servicio de peliculas con suscripción, su contenido está sujeto a disponibilidad. El
+                                servicio de Movie App es
                                 comercializado por una Sociedad Anónima (Argentina) Ciudad Autónoma de Buenos
                                 Aires. La suscripción incluye todas las peliculas y series disponibles en la plataforma. Ante
                                 cualquier duda comunicarse a cualquiera de las redes sociales incluidas en dicha plataforma.

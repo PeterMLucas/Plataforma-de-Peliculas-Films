@@ -10,13 +10,20 @@
 
 body{
     font-family: 'Oswald', sans-serif;
+    background-color: #000000;
 }
 
 .container-fluid{
     padding: 0;
-    background-color: #212529;
 }
 /* _______________________NAV___________________ */
+.container-navbar{
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+
 .container-fluid nav{
     padding: 10px;
 }
@@ -39,9 +46,34 @@ textarea:focus, input:focus, input[type]:focus {
     outline: 0 none;
 }
 
-.nav-item>a:hover{
-    color: rgba(0,92,245,1) !important;
+.navbar-dark{
+    background-color: #212529d8;
 }
+
+#underline:after{
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: #D21922;
+            transform: scaleX(0);
+            transform-origin: bottom right;
+            transition: transform 0.6s ease-out;
+        }
+
+#underline{
+            color: #ffffff;
+            font-size: 1rem;
+            display: inline-block;
+            position: relative;
+        }
+
+#underline:hover:after{
+            transform: scaleX(1);
+            transform-origin: bottom left;
+        }
 
 .navbarSupportedContent>img{
     margin: 0 70px 0 0;
@@ -61,7 +93,7 @@ textarea:focus, input:focus, input[type]:focus {
 }
 
 ul.dropdown-menu.show{
-    background-color: #005ef5b5;
+    background-color: #d21922a2;
 }
 
 .offcanvas-1{
@@ -88,7 +120,7 @@ a.dropdown-item{
 }
 
 a.dropdown-item:hover{
-    background-color: #0097F7;
+    background-color: #D21922;
 }
 /* _______________________CAROUSEL______________________ */
 .titulo-h1{
@@ -96,10 +128,10 @@ a.dropdown-item:hover{
     top: 10%;
     z-index: 100;
     color: #FFFFFF;
-    padding: 20px;
+    padding: 3% 20px 20px;
 }
 .titulo-h1-texto>h1{
-    font-size: 60px;
+    font-size: 40px;
     font-weight: bold;
     font-style: italic;
 }
@@ -107,12 +139,13 @@ a.dropdown-item:hover{
     padding-top: 10px;
 }
 
-.btn-principales button.btn{
-    background: linear-gradient(265deg, rgba(0,92,245,1) 0%, rgba(0,151,247,1) 100%);
+.btn-principales button.btn{    
+    background: linear-gradient(100deg, rgba(210,25,34,1) 0%, rgba(210,25,34,0.3925945378151261) 60%);
 }
 
 .btn-principales button.btn:hover{
-    background: linear-gradient(265deg, rgba(0,151,247,1) 0%, rgba(0,92,245,1) 100%);
+    background: transparent;
+    border: 2px solid #ffffff;
 }
 
 .btn-principales button.btn{
@@ -228,7 +261,7 @@ p{
     top: 0;
     width: 100%;
     height: 100%;
-    background: #005bf978;
+    border: 2px solid #ffffff;
     opacity: 0;
     visibility: hidden;
     text-align: center;
@@ -243,6 +276,7 @@ p{
 .items-img .img-hover:hover>.items-texto{
     opacity: 1;
     visibility: visible;
+    text-shadow: #000000 1px 0 10px;
 }
 
 .items-img .img-hover:hover>.items-texto h2{
@@ -280,10 +314,14 @@ margin-bottom: 15px;
 
 /* _______________________REDES________________________*/
 
+.redes{
+    padding: 2% 0;
+}
+
 .container-redes{
     color: #FFFFFF;
     text-align: center;
-    background: linear-gradient(265deg, rgb(0, 66, 173) 0%, rgb(0, 117, 189) 100%);
+    background: linear-gradient(90deg, rgba(210,25,34,1) 0%, rgba(210,25,34,0.3925945378151261) 35%);
     font-size: 25px;
 }
 
@@ -305,7 +343,7 @@ margin-bottom: 15px;
 }
 
 .fa-instagram:hover, .fa-twitter:hover, .fa-facebook:hover{
-    color: #212529;
+    color: #D21922;
     cursor: pointer;
 }
 
@@ -323,7 +361,7 @@ margin-bottom: 15px;
 }
 
 .footer-logo>img{
-    width: 80px;
+    width: 130px;
 }
 
 .footer-items{
@@ -337,7 +375,7 @@ margin-bottom: 15px;
 }
 
 .footer-items>div>a:hover{
-    color: #005CF5;
+    color: #D21922;
 }
 
 .footer-texto{
